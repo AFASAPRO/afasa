@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | AFASA </title>
+
+    <!-- custom css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <!--box icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesome for Icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- AOS CDN -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+    <!--header design-->
+    <header class="header">
+        <a href="#" class="logo">👨🏽‍💻AFASA Portfolio.</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+    </header>
+    
+
+    <!--home section-->
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Mugisha Afani</h1>
+            <p>I’m a passionate Software Developer 👨🏽‍💻 dedicated to crafting modern, user-friendly, and efficient software solutions. I turn ideas into intuitive digital experiences that not only function seamlessly but also captivate users.</p>
+ 
+            <div class="social-media">
+                <a href="https://www.instagram.com/mu_afani/"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="https://github.com/AFASAPRO/"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+            <a href="images/Mugisha_Afani_Software_Developer_CV_Updated.pdf" class="btn" download>Download CV</a>
+
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Web Developer</h3>
+                </div>
+       
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-camera'></i>
+                    <h3>Graphic designer</h3>
+                </div>
+
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-palette'></i>
+                    <h3>Web Designer</h3>
+                </div>
+
+                <div class="profession" style="--i:3;">
+                    <i class='bx bx-video-recording'></i>
+                    <h3>Analytics</h3>
+                </div>
+
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/afasa.png" alt=""> 
+        </div>
+
+    </section>
+
+<!-- about section -->
+<section class="about" id="about">
+
+    <div class="about-img">
+        <img src="images/afasa.png" alt="">
+    </div>
+
+    <div class="about-content">
+        <h2 class="heading">About <span>AFASA</span></h2>
+        <h3>Hi, I'm Here To Help Build Your Next Big Idea!</h3>
+        <p>
+            I’m a passionate and detail-oriented developer focused on building modern, responsive, and user-friendly web applications.
+            <span class="more-about">With a strong foundation in PHP, Laravel, Node.js, and MySQL,And other programming languages I specialize in developing full-stack solutions, including chat apps, online examination systems, and dynamic dashboards. Whether it's creating sleek interfaces or implementing robust backend logic, I'm here to turn ideas into reality through clean code and creative thinking.</span>
+        </p>
+        <a href="#" class="btn about-read-more"><span class="toggle-icon">+</span> Read More</a>
+    </div>
+
+</section>
+<script>
+    const aboutBtn = document.querySelector('.about-read-more');
+    const moreAbout = document.querySelector('.more-about');
+    const toggleIcon = aboutBtn.querySelector('.toggle-icon');
+
+    aboutBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+        moreAbout.classList.toggle('show');
+        const expanded = moreAbout.classList.contains('show');
+        aboutBtn.innerHTML = `<span class="toggle-icon">${expanded ? '-' : '+'}</span> ${expanded ? 'Read Less' : 'Read More'}`;
+    });
+</script>
+
+
+<!-- service section -->
+<section class="services" id="services">
+    <h2 class="heading">AFASA <span>Services</span></h2>
+
+    <div class="services-container">
+
+        <div class="services-box">
+            <i class='bx bx-code-alt'></i>
+            <h3>Web Development</h3>
+            <p>
+                I build responsive, fast, and dynamic websites tailored to your business needs.
+                <span class="more-text">From frontend user interfaces to backend logic, I use modern tools and frameworks to deliver secure and scalable web solutions.</span>
+            </p>
+            <a href="#" class="btn read-more-btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bx-bar-chart-alt'></i>
+            <h3>Digital Marketing</h3>
+            <p>
+                I help grow your digital presence with strategic online campaigns and analytics.
+                <span class="more-text">My services include SEO, social media marketing, email marketing, and performance tracking to boost visibility and conversion.</span>
+            </p>
+            <a href="#" class="btn read-more-btn">Read More</a>
+        </div>
+
+        <div class="services-box">
+            <i class='bx bxs-paint'></i>
+            <h3>Graphic Design</h3>
+            <p>
+                I create stunning visual designs that elevate your brand and capture attention.
+                <span class="more-text">From logos to banners and social media posts, I ensure every design speaks your brand’s language beautifully.</span>
+            </p>
+            <a href="#" class="btn read-more-btn">Read More</a>
+        </div>
+
+    </div>
+</section>
+
+
+
+<!-- JavaScript to toggle Read More -->
+<script>
+    document.querySelectorAll('.read-more-btn').forEach(btn => {
+        btn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const moreText = this.previousElementSibling.querySelector('.more-text');
+            moreText.classList.toggle('show');
+            this.textContent = moreText.classList.contains('show') ? 'Read Less' : 'Read More';
+        });
+    });
+</script>
+
+
+
+    <!-- Skills Section -->
+<section class="skills" id="skills">
+    <h2 class="section-title">Skills & Tech Stack</h2>
+    <div class="skills-grid">
+      <div class="skill-card" data-aos="fade-up">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+        <p>HTML5</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+        <p>CSS3</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+        <p>Node.js</p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="400">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+        <p>PHP </p>
+      </div>
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+        <p>MySQL</p>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+        <p>PostgreSQL</p>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+        <p>MongoDB</p>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+        <p>Firebase</p>
+    </div>
+    
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+        <p>GitHub</p>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gitlab/gitlab-original.svg" alt="GitLab">
+        <p>GitLab</p>
+    </div>    
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+        <p>Figma</p>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Adobe Photoshop">
+        <p>Adobe Photoshop</p>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-line.svg" alt="Adobe Illustrator">
+        <p>Adobe Illustrator</p>
+    </div>
+    
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <p>React</p>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular">
+        <p>Angular</p>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue.js">
+        <p>Vue.js</p>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/laravel.svg" alt="Laravel">
+        <p>Laravel</p>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/amazonaws.svg" alt="AWS">
+        <p>AWS</p>
+    </div>    
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure">
+        <p>Azure</p>
+    </div>
+    <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" alt="Google Cloud">
+        <p>Google Cloud</p>
+    </div>
+    
+    </div>
+  </section>
+
+
+
+
+  <h2 class="section-title" style="text-align: center; font-size: 4em; font-weight: 700;">Time Line</h2>
+  <section class="timeline" id="timeline">
+    <div class="timeline-row">
+  
+      <!-- Education Column -->
+      <div class="timeline-column" data-aos="fade-right">
+        <h2 class="title">🎓 Education</h2>
+        <div class="timeline-box">
+          <div class="timeline-content">
+            <div class="content">
+              <div class="year"><i class='bx bxs-calendar'></i> 2021 - 2022</div>
+              <h3>High School Degree</h3>
+              <p>Strong foundation in math, computer science, and logical problem-solving — the start of my tech path.</p>
+            </div>
+          </div>
+  
+          <div class="timeline-content">
+            <div class="content">
+              <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023</div>
+              <h3>Bachelor in Software Engineering</h3>
+              <p>Studied full-stack development, databases, real-time systems, and modern web technologies.</p>
+            </div>
+          </div>
+  
+          <div class="timeline-content">
+            <div class="content">
+              <div class="year"><i class='bx bxs-calendar'></i> 2023 - Present</div>
+              <h3>Master Degree (Ongoing)</h3>
+              <p>Focused on full-stack architecture and AI integration for scalable, intelligent applications.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Experience Column -->
+      <div class="timeline-column" data-aos="fade-left">
+        <h2 class="title">💼 Experience</h2>
+        <div class="timeline-box">
+          <div class="timeline-content">
+            <div class="content">
+              <div class="year"><i class='bx bxs-calendar'></i> 2021 - 2022</div>
+              <h3>Frontend Developer</h3>
+              <p>Created responsive UIs with HTML, CSS, JS. Focused on smooth UX and clean UI design.</p>
+            </div>
+          </div>
+  
+          <div class="timeline-content">
+            <div class="content">
+              <div class="year"><i class='bx bxs-calendar'></i> 2022 - 2023</div>
+              <h3>Backend Developer</h3>
+              <p>Worked with Node.js, PHP, and MySQL to build secure and high-performance server logic.</p>
+            </div>
+          </div>
+  
+          <div class="timeline-content">
+            <div class="content">
+              <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2024</div>
+              <h3 >Full Stack Developer</h3>
+              <p>Delivered complete web apps from frontend to backend including chat apps and dashboards.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+  
+
+  
+
+  <section class="stats-section" id="stats">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">My Stats</h2>
+      <div class="stats-grid">
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-icon"><i class="fas fa-briefcase"></i></div>
+          <h3 class="stat-number" data-count="5">0</h3>
+          <p>Years of Experience</p>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-icon"><i class="fas fa-check-circle"></i></div>
+          <h3 class="stat-number" data-count="120">0</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <h3 class="stat-number" data-count="95">0</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-icon"><i class="fas fa-code"></i></div>
+          <h3 class="stat-number" data-count="30">0</h3>
+          <p>Technologies Learned</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+
+    <!--portfolio section-->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">AFASA Latest <span>Project</span></h2>
+
+        <div class="portfolio-container">
+
+            <div class="portfolio-box">
+                <img src="images/p1.jpeg" alt="images">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/p2.jpeg" alt="images">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/p3.jpeg" alt="images">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/p5.jpeg" alt="images">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/p4.jpeg" alt="images">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <div class="portfolio-box">
+                <img src="images/p6.jpeg" alt="images">
+
+                <div class="portfolio-layer">
+                    <h4>Web Design</h4>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+        <!--testimonial section-->
+        <div class="testimonial-container">
+            <h2 class="heading">Valuable <span>Testimonial</span></h2>
+
+            <div class="testimonial-wrapper">
+                <div class="testimonial-box mySwiper">
+                    <div class="testimonial-content swiper-wrapper">
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="images/t1.jpg" alt="Testimonial">
+                            <h3>Ndaga Hertien</h3>
+                            <p>Working with AFASA was an outstanding experience. His attention to detail and ability to transform ideas into functional, elegant solutions truly sets him apart in the tech space.</p>
+                        </div>
+
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="images/t2.jpg" alt="Testimonial">
+                            <h3>Mugisha Tumusifu Chretien</h3>
+                            <p>AFASA built our platform from scratch with precision and care. The result was a responsive, modern system that our users love. Highly recommend for full-stack development!</p>
+                        </div>
+
+                        <div class="testimonial-slide swiper-slide">
+                            <img src="images/t3.jpg" alt="Testimonial">
+                            <h3>Espoir</h3>
+                    <p>Professional, creative, and reliable — AFASA delivered beyond our expectations. The final product was not only technically sound but also beautifully designed.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+
+                </div>
+            </div>
+        </div>
+
+    <!-- Contact Section -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+
+    <form id="contact-form">
+
+        <div class="input-box">
+            <input type="text" name="fullName" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-box">
+            <input type="number" name="mobile" placeholder="Mobile Number" required>
+            <input type="text" name="location" placeholder="Location" required>
+        </div>
+
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+        <input type="submit" value="Send Message" name="send" class="btn">
+
+    </form>
+</section>
+        <!--footer section-->
+        <footer class="footer" >
+            <div class="footer-text">
+                <p>“The only limit to what you can achieve is the limit you set in your mind.” – AFANI</p>
+                <div class="socials">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                  </div>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+
+        </footer>
+
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- custom js-->
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- emailjs -->
+<!-- emailjs -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+(function() {
+    emailjs.init({
+      publicKey: "iL8phTLa8QEZDtIWR",
+    });
+})();
+
+window.onload = function() {
+    const form = document.getElementById('contact-form');
+
+    form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_5d575c9", "template_bgqw6hj", form)
+            .then(() => {
+                form.reset(); // clear the form
+                showPopup('✅ Message Sent Successfully !');
+            }, (error) => {
+                showPopup('❌ Message Failed to Send. Try Again OR CheckNetwork!');
+                console.error('FAILED...', error);
+            });
+    });
+
+    function showPopup(message) {
+        // Check if popup already exists, if yes, remove it first
+        const oldPopup = document.getElementById('popup-message');
+        if (oldPopup) oldPopup.remove();
+
+        // Create new popup
+        const popup = document.createElement('div');
+        popup.id = 'popup-message';
+        popup.innerText = message;
+
+        // Style the popup
+        popup.style.position = 'fixed';
+        popup.style.bottom = '30px';
+        popup.style.right = '30px';
+        popup.style.background = '#333';
+        popup.style.color = '#fff';
+        popup.style.padding = '14px 22px';
+        popup.style.borderRadius = '8px';
+        popup.style.boxShadow = '0px 4px 15px rgba(0,0,0,0.3)';
+        popup.style.fontSize = '16px';
+        popup.style.zIndex = '9999';
+        popup.style.opacity = '0';
+        popup.style.transition = 'all 0.4s ease';
+
+        document.body.appendChild(popup);
+
+        // Animate it showing
+        setTimeout(() => {
+            popup.style.opacity = '1';
+            popup.style.bottom = '50px';
+        }, 100);
+
+        // Hide after 4 seconds
+        setTimeout(() => {
+            popup.style.opacity = '0';
+            popup.style.bottom = '30px';
+            setTimeout(() => {
+                popup.remove();
+            }, 400);
+        }, 4000);
+    }
+}
+</script>
+
+</script>
+<!-- AOS Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>AOS.init();</script>
+<script>
+    const counters = document.querySelectorAll(".stat-number");
+  
+    const runCounter = (entry) => {
+      if (entry.isIntersecting) {
+        counters.forEach(counter => {
+          let target = +counter.getAttribute('data-count');
+          let count = 0;
+          const step = target / 80;
+  
+          const updateCount = () => {
+            if (count < target) {
+              count += step;
+              counter.innerText = Math.ceil(count);
+              requestAnimationFrame(updateCount);
+            } else {
+              counter.innerText = target;
+            }
+          };
+          updateCount();
+        });
+      }
+    };
+  
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => runCounter(entry));
+    }, { threshold: 0.6 });
+  
+    counters.forEach(counter => observer.observe(counter));
+  </script>
+  
+
+  <!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+</script>
+
+</body>
+</html>
+
