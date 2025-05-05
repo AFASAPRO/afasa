@@ -832,10 +832,12 @@ span{
     overflow: hidden;
 }
 
-.portfolio-box img{
+.portfolio-box img {
     width: 100%;
-    height: 400px;
-    transition: .5 ease;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.5s ease;
 }
 
 .portfolio-box:hover img{
