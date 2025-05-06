@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /private/
+Disallow: /drafts/
+Allow: /
+
+Sitemap: https://afasapro.github.io/afasa/sitemap.xml
