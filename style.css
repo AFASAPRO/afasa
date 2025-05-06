@@ -1137,9 +1137,7 @@ footer {
     }
 
     .home-img img{
-        height: 102vh;
-        width: 100%;
-        border-radius: 1px;
+     display: none;
         
     }
 
